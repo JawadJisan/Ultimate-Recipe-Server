@@ -15,7 +15,11 @@ const app = express();
 // app.use(cors());
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"],
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:3000",
+      "https://ultimate-recipe.vercel.app",
+    ],
     credentials: true,
   })
 );
