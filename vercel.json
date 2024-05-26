@@ -2,12 +2,12 @@
   "version": 2,
   "builds": [
     {
-      "src": "app.js",
+      "src": "src/app.js",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build"
       }
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "/app.js" }]
+  "routes": [{ "src": "/(.*)", "dest": "/" }]
 }
